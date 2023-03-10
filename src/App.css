@@ -1,0 +1,24 @@
+.Appbar{
+    background: #2874f0;
+    height: 55px;
+}
+.search{
+    width: 38%;
+}
+.btn-height{
+    height: 25px;
+    width: 90px;  
+}
+.text{
+    font-weight: 600;
+}
+.Fasion{
+    margin-left: 280px;
+    margin-top: -30px;
+    width: 150px;
+    background:#f2f0f0;
+}
+.dropdown{
+    margin-left: -100px;
+    margin-top: -45px;
+}
