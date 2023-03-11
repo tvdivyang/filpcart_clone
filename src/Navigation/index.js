@@ -1,21 +1,25 @@
-import React from "react";
 import { navData } from "../constants/data";
 import { useState } from "react";
 import "../App.css";
 import Dropdown from "../Navigation/Dropdown";
+import ShowHome from "./ShowHome";
 function Navigation() {
   const [dropdown, setDropDown] = useState(false);
+  const [showhome, setShowHome] = useState(false);
   const hoverHnadlder = (id) => {
     console.log("object,", id);
-    if (id === 3) {
-      setDropDown(true);
+    if (id === 4) {
+      setDropDown(!dropdown);
       return <></>;
+    } else if (id === 5) {
+      setShowHome(!showhome);
     }
   };
 
-  const hoverHnadlders = () => {
-    // setDropDown(false);
+  const pull_data = (data) => {
+    setDropDown(data);
   };
+
   return (
     <>
       <div
@@ -33,7 +37,6 @@ function Navigation() {
               src={item.url}
               alt="hello"
               onMouseOver={() => hoverHnadlder(item.id)}
-              onMouseOut={() => hoverHnadlders(item.id)}
             />
             <p className="fs-6 text">{item.text}</p>
           </div>
@@ -41,7 +44,15 @@ function Navigation() {
         <div></div>
       </div>
 
-      {dropdown && <Dropdown className="dropdown"></Dropdown>}
+      {dropdown && (
+        <Dropdown className="dropdown" dropdowns={dropdown} func={pull_data} />
+      )}
+
+      {showhome && (
+        <>
+          <ShowHome/>
+        </>
+      )}
     </>
   );
 }

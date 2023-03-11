@@ -13,7 +13,7 @@ export const navData = [
   },
   {id:4,
     url: "https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100",
-    text: "Electronics"
+    text: "Electronics "
   },
   {id:5,
     url: "https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100",

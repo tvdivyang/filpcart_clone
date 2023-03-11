@@ -13,12 +13,20 @@
     font-weight: 600;
 }
 .Fasion{
-    margin-left: 280px;
-    margin-top: -30px;
-    width: 150px;
+    width: 35%;
+    height:35%;
+    margin-left: 281px;
     background:#f2f0f0;
 }
 .dropdown{
     margin-left: -100px;
     margin-top: -45px;
 }
+.Electronic p:hover {
+    color:#2874f0;
+    cursor: pointer;
+
+}
+.submenuitem:hover{
+    color:#2874f0;
+    cursor: pointer;  }
