@@ -26,27 +26,28 @@ function Dropdown({ dropdowns, func }) {
 
     if (menuid === "11") {
       setAudio(!audio);
+    
     } 
-      // setCamerass(!camerass);
+     
      if (menuid === "13") {
        setAudio(false);
-      setCamerass(!camerass);
+      setCamerass(true);
     } else if (menuid === "14"){
       setCamerass(false);
       setComputer(!comput);
     }else if(menuid === "15"){
-      setComputer(!comput);
-      setGame(!game)
-      
+      setComputer(false);
+      setGame(true)
     }
     else{
-      
+      setCamerass(false);
+      setComputer(false);
       setGame(false);
     }
   };
   return (
     <div
-      className="Fasion"
+      className="Fasion  position-absolute "
       onMouseLeave={() => hoverHnadlders()}
       onMouseOver={() => setShow(show)}
     >
@@ -70,7 +71,7 @@ function Dropdown({ dropdowns, func }) {
                 <p id="20">Powerbank</p>
               </div>
 
-              <div className="col-6">
+              <div className="col-6 position-relative" style={{background:"#e3e3e3"}}  >
                 {audio && (
                   <>
                     {Audio.map((item, index) => {

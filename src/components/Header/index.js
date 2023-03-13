@@ -35,12 +35,15 @@ function Header() {
           </div>
           <Search  />
           <div className="d-flex mt-3 align-item-center">
+            <div className="text-center">
+
             <button
               type="button"
               className="btn bg-white btn-height btn-sm me-5 ms-5   "
             >
               Login
             </button>
+            </div>
             <p className="me-5">Become a seller</p>
             <p className="me-5">More</p>
 

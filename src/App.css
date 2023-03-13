@@ -16,7 +16,8 @@
     width: 35%;
     height:35%;
     margin-left: 281px;
-    background:#f2f0f0;
+    /* background:#f2f0f0; */
+    z-index: 33;
 }
 .dropdown{
     margin-left: -100px;
@@ -29,4 +30,38 @@
 }
 .submenuitem:hover{
     color:#2874f0;
-    cursor: pointer;  }
+    cursor: pointer;  
+}
+
+.homeitemHover p:hover{
+    color: #2874f0;
+}
+.homeitemHover h6:hover{
+    color: #055ce9;
+}
+
+.galer{
+    background: #e8e4e4;
+    height: 10rem;
+    gap: 1;
+}
+.galer div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.galer >div:hover{
+    flex:5;
+}
+.white{
+    display: inline-block;
+    width: calc(100% - 80px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+}

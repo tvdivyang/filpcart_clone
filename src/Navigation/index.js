@@ -10,14 +10,22 @@ function Navigation() {
     console.log("object,", id);
     if (id === 4) {
       setDropDown(!dropdown);
+      setShowHome(false);
       return <></>;
     } else if (id === 5) {
       setShowHome(!showhome);
+      setDropDown(false);
+    } else {
+      setShowHome(false);
+      setDropDown(false);
     }
   };
 
   const pull_data = (data) => {
     setDropDown(data);
+  };
+  const pull_datas = (data) => {
+    setShowHome(data);
   };
 
   return (
@@ -50,7 +58,7 @@ function Navigation() {
 
       {showhome && (
         <>
-          <ShowHome/>
+          <ShowHome showhomes={showhome} fun={pull_datas} />
         </>
       )}
     </>
